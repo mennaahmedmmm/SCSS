@@ -1,0 +1,10 @@
+.row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: -1rem;
+}
+@for $i from 1 through 5 {
+    .col-#{$i} {
+      width: calc(100% / 5) * $i;
+    }
+  }

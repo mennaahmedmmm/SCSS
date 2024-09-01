@@ -1,0 +1,34 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: $base-font-size;
+    color: white;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+  .button-secondary {
+    background-color: $secondary-color;
+  }
+  
+  .button:hover {
+    background-color: darken($primary-color, 10%);
+  }
+  
+  .message {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .sucess {
+    @extend .message;
+    border-color: rgb(10, 174, 10);
+  }
+  
+  .error {
+    @extend .message;
+    border-color: rgb(201, 28, 28);
+  }
